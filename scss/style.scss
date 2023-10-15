@@ -1,0 +1,58 @@
+@import "mixins";
+@import "header";
+@import "section-welcome";
+@import "section-about";
+@import "section-favorites";
+@import "section-coffeeshop";
+@import "section-contacts";
+@import "section-cards";
+@import "footer";
+@import "modal-windows";
+@import "dropdown";
+
+
+html,
+body {
+  margin: 0;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1440px;
+  scroll-behavior: smooth;
+  &.lock {
+    overflow: hidden;
+}
+}
+
+* {
+  font-family: "Forum", cursive;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  position: relative;
+}
+// .title::after {
+//   display: block;
+//   width: 50px;
+//   border-bottom: 1px solid #0C0C0E;
+//   content: '';
+//   top: 60px;
+//   left: calc(50vw - 30px);
+//   color: #BB945F;
+//   position: absolute;
+// }
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+

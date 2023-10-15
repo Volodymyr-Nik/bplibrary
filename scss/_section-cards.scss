@@ -1,0 +1,151 @@
+.librarycards {
+  @include media-screen-tablet {
+    height: 857px;
+  }
+  text-align: center;
+  height: 614px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: -20px;
+  .librarycards-block {
+    width: 600px;
+    height: 453px;
+    &__title {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 2%;
+    }
+    .card-form {
+      width: 600px;
+      height: 386px;
+      border: 3px solid #bb945f;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      &__inputs {
+        width: 560px;
+        height: 272px;
+        background-color: #bb945f;
+
+        &_title {
+          font-family: "Forum", cursive;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 30px;
+          letter-spacing: 2%;
+          text-align: left;
+          padding-left: 20px;
+        }
+        &_name {
+          width: 520px;
+          height: 66px;
+          border-radius: 10px;
+          font-family: "Forum", cursive;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 50px;
+          letter-spacing: 2%;
+          padding-left: 20px;
+          border: 1px solid #bb945f;
+        }
+        &_number {
+          width: 520px;
+          height: 66px;
+          border-radius: 10px;
+          font-family: "Forum", cursive;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 50px;
+          letter-spacing: 2%;
+          padding-left: 20px;
+          border: 1px solid #bb945f;
+          margin-top: 25px;
+        }
+      }
+      &__button {
+        width: 242px;
+        height: 44px;
+        border: 1px solid #0c0c0e;
+        border-radius: 2px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+      &__button:hover {
+        border: 1px solid #bb945f;
+        background-color: #bb945f;
+        transition: 1s;
+      }
+    }
+  }
+  .librarycards-status {
+    @include media-screen-tablet {
+      margin-top: 20px;
+      text-align: center;
+      width: 590px;
+      &__subtitle {
+        margin-top: 40px;
+        text-indent: 0px;
+      }
+      &__buttons {
+        margin-right: 8px;
+      }
+    }
+    width: 475px;
+    height: 253px;
+    text-align: end;
+    &__title {
+      font-family: "Forum", cursive;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 33px;
+      letter-spacing: 0.4px;
+    }
+    &__subtitle {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      letter-spacing: 2%;
+      text-indent: 10px;
+    }
+    &__buttons {
+      margin-top: 17px;
+      width: 75px;
+      height: 30px;
+      border: 1px solid #0c0c0e;
+      border-radius: 2px;
+      background-color: #fff;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 12.1px;
+      letter-spacing: 1px;
+      margin-left: 15px;
+    }
+    &__buttons:hover {
+      border: 1px solid #bb945f;
+      background-color: #bb945f;
+      transition: 1s;
+      cursor: pointer;
+    }
+  }
+}
+.librarycards > div {
+  display: flex;
+  justify-content: space-between;
+  @include media-screen-tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}

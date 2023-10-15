@@ -1,0 +1,256 @@
+.modal {
+  box-sizing: border-box;
+  width: 250px;
+  height: 262px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 60px;
+  right: 0;
+  display: none;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000000;
+  }
+  &__window {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    margin-top: -15px;
+    &_subtitle {
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+    &_input {
+      width: 200px;
+      height: 20px;
+      border: 1px solid #bb945f;
+      box-sizing: border-box;
+    }
+  }
+  &__footer {
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.register-window {
+  height: 382px;
+}
+
+.btn {
+  color: #0c0c0e;
+  background-color: #ffffff;
+  width: 75px;
+  height: 30px;
+  border: 1px solid #0c0c0e;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 12px;
+
+  &:hover {
+    background-color: #bb945f;
+    cursor: pointer;
+  }
+}
+
+.myprofile {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: none;
+  color: #000000;
+
+  &__side {
+    width: 170px;
+    height: 400px;
+    background-color: #0c0c0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    gap: 15px;
+
+    &_img {
+      width: 80px;
+      height: 80px;
+      background-color: #ffffff;
+      color: #bb945f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &_name {
+      width: 120px;
+      height: 30px;
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__info {
+    width: 430px;
+    height: 400px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    &_title {
+      font-family: "Forum", cursive;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+    &_statistic {
+      display: flex;
+      gap: 20px;
+    }
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .rented__books {
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #0c0c0e;
+      }
+      ul > li {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: left;
+        color: #000000;
+      }
+    }
+  }
+  #text-to-copy {
+    color: #bb945f;
+  }
+  #copy-button {
+    cursor: pointer;
+  }
+}
+
+.buycard {
+  width: 650px;
+  height: 540px;
+  position: absolute;
+  background-color: #ffffff;
+  display: none;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #ffffff;
+    font-family: "Forum", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    background-color: #0c0c0e;
+  }
+  &__main {
+    display: flex;
+    gap: 40px;
+    margin: 30px 40px 40px 40px;
+    &_orderform {
+      width: 200px;
+      height: 410px;
+      margin-top: -15px;
+      .short-input {
+        width: 45px;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .modal__window_price {
+        color: #0c0c0e;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: left;
+      }
+    }
+    &_header {
+      display: flex;
+      gap: 25px;
+    }
+    &_description {
+      width: 330px;
+      height: 160px;
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #8e8e8e;
+    }
+  }
+}
+.closebtn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}

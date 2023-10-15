@@ -1,0 +1,34 @@
+.welcome {
+  height: 600px;
+  background: url(../assets/Welcome.jpg);
+  background-position: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @include media-screen-small {
+    background: url(../assets/welcome_bg_small.jpg);
+  }
+
+
+  &__title {
+    margin-top: 60px;
+    width: 600px;
+    height: 220px;
+    color: #fff;
+    background-color: #0C0C0E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title > h3 {
+    font-family: "Forum", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    align-items: center;
+    margin: 0;
+  }
+}
