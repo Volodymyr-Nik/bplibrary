@@ -220,7 +220,7 @@
 /*/Menu*/
 .welcome {
   height: 600px;
-  background: url(../assets/Welcome.jpg);
+  background: url(../assets/welcome.jpg);
   background-position: right;
   display: -webkit-box;
   display: -ms-flexbox;
